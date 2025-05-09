@@ -111,8 +111,8 @@ try:
         st.success("Arquivo carregado com sucesso!")
 
         # Exibe tabela principal
-        colunas_visiveis = ["FazendaRef", "Fazenda", "Produtor", "Cultivar", "GM", "U %", "Plantio", "Colheita",
-                            "População Final", "Prod_kg_@13%", "Prod_sc_@13%", "Latitude", "Longitude", "Altitude",
+        colunas_visiveis = ["Cultivar", "GM", "U %", "Plantio", "Colheita",
+                            "População Final", "Prod_kg_@13%", "Prod_sc_@13%", "Altitude",
                             "Microrregião", "Cidade", "Estado", "Código Estado", "Macro", "REC"]
         df = df[[col for col in colunas_visiveis if col in df.columns]]
 
